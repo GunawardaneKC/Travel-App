@@ -1,0 +1,379 @@
+.second-span {
+    display: inline-block; /* Initially display the second span */
+    opacity: 0; /* Initially hide the second span */
+    transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+}
+
+.adventure-container:hover .second-span {
+    opacity: 1; /* Show the second span on hover */
+}
+
+.relative:hover .second-span {
+    opacity: 1;
+}
+
+/* CSS for the fade-in effect */
+.fade-in {
+    opacity: 0; /* Initially hide the content */
+    transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Show the content */
+}
+.abc{
+    animation: fadeInRight 2s ease;
+}
+
+.abcd{
+    animation: fadeInLeft 2s ease;
+}
+
+.cde{
+    animation: fadeInUp 2s ease;
+}
+
+
+.contact-bg{
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(/tour04-minw.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    animation: fadeInUp 2s ease;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    animation: fadeInUp 2s ease;
+}
+.line div{
+    margin: 0 0.2rem;
+    animation: fadeInUp 2s ease;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: #ff4500;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #ff4500;
+    border-radius: 50%;
+}
+
+.hero {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.heading h1 {
+    color: rgb(23 37 84 );
+    font-size: 40px;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 700;
+    animation: fadeInUp 2s ease;
+    line-height: 1.2em;
+}
+.heading h2 {
+    color: rgb(23 37 84 );
+    font-size: 30px;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 700;
+    animation: fadeInUp 2s ease;
+    line-height: 1.2em;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    margin-top: 50px;
+    flex-direction: column; /* Change flex-direction to column for screens below 768px */
+}
+
+.hero-content {
+    flex: 1;
+    width: 100%;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.hero-content h2 {
+    font-size: 34px;
+    margin-bottom: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+.hero-content1 p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    color: #000000;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+.hero-image {
+    width: 100%; /* Set the width to 100% to make the image responsive */
+    margin: 20px auto; /* Adjust margin for better spacing */
+    order: 2; /* Adjust margin for better spacing */
+    animation: fadeInRight 2s ease;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight {
+    0%{
+    opacity: 0;
+    transform: translateX(-50px);
+    }
+    100%{
+    opacity: 1;
+    transform: translateX(0px);
+    }
+    }
+
+@keyframes fadeInLeft {
+    0%{
+    opacity: 0;
+    transform: translateX(50px);
+    }
+    100%{
+    opacity: 1;
+    transform: translateX(0px);
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+        .container {
+            flex-direction: row; /* Change flex-direction back to row for screens above 768px */
+        }
+    
+        .hero-content {
+            width: calc(50% - 50px);
+            margin: 0px 25px 0px 0px;
+        }
+    
+        .hero-image {
+            width: calc(50% - 50px);
+            margin: 20px auto; /* Adjust margin for better spacing */
+            order: 2; /* Change order to display image on the right */
+        }
+    
+        .expanded-content {
+            margin-top: 3px;
+        }
+        
+    }
+
+    @media (max-width: 768px) {
+        .contact-bg h2 {
+            font-size: 2rem; /* Adjust this value to suit your needs */
+        }
+    }
+
+
+/* Ensure you include this CSS in your global styles or relevant CSS file */
+
+.acontainer {
+    max-width: 1254px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .border {
+    border-width: 1px;
+    border-color: #ddd;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .h-fit {
+    height: fit-content;
+  }
+  
+  .ml-3 {
+    margin-left: 0.75rem;
+  }
+  
+  .ml-auto {
+    margin-left: auto;
+  }
+  
+  .mr-3 {
+    margin-right: 0.75rem;
+  }
+  
+  .mt-5 {
+    margin-top: 1.25rem;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .md\:text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .md\:text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .border-3 {
+    border-width: 3px;
+  }
+  
+  .border-orange-500 {
+    border-color: #ff4500;
+  }
+  
+  .border-yellow-500 {
+    border-color: gold;
+  }
+  
+  .adventure-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .responsive-img{
+    width: 300px;
+    height: 200px;
+  }
+
+  .responsive-img4{
+    width: 300px;
+    height: 200px;
+  }
+  
+
+  /* @media (min-width: 951px) and (max-width: 1254px) {
+    .responsive-img4 {
+      display: none;
+      width: 300px;
+      height: 200px;
+    }
+    .responsive-img{
+      width: 300px;
+      height: 200px;
+    }
+  } */
+
+  @media (max-width: 1254px){
+    .acontainer{
+        max-width: 653px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .responsive-img, .responsive-img4 {
+      width: 50%; /* Adjust the width to fit two images per row */
+      height: auto;
+    }
+    
+  }
+
+  @media (max-width: 951px){
+    .acontainer{
+        max-width: 653px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+  }
+
+  @media (max-width: 653px) {
+    .acontainer {
+      max-width: 653px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    /* .relative {
+      width: 100%;
+    } */
+    /* .flex {
+      display: flex;
+      flex-wrap: wrap;
+    } */
+    .responsive-img, .responsive-img4 {
+      width: 50%; /* Adjust the width to fit two images per row */
+      height: auto;
+    }
+    /* .adventure-overlay span {
+      font-size: 2rem;
+    } */
+  }
+
+  @media (max-width: 520px){
+    .second-span{
+        display:contents
+    }
+  }
+  
+  @media (max-width: 520px){
+    .second-span{
+        display:contents
+    }
+  }

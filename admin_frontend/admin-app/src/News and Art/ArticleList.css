@@ -1,0 +1,136 @@
+.article-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .article-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .article-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .article-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .article-list li h3 {
+    margin: 0;
+    font-size: 1.2em;
+    flex-grow: 1;
+  }
+  
+  .article-list button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .article-list button:hover {
+    background: #0056b3;
+  }
+  
+  .article-list button.delete-btn {
+    background: #dc3545;
+  }
+  
+  .article-list button.delete-btn:hover {
+    background: #c82333;
+  }
+  
+  .article-list img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  /* DynamicForm styles */
+  .dynamic-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+  }
+  
+  .dynamic-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dynamic-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .dynamic-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .dynamic-form input[type="text"],
+  .dynamic-form input[type="file"],
+  .dynamic-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .dynamic-form textarea {
+    resize: vertical;
+  }
+  
+  .dynamic-form .add-btn,
+  .dynamic-form .submit-btn {
+    background: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+  }
+  
+  .dynamic-form .add-btn:hover,
+  .dynamic-form .submit-btn:hover {
+    background: #218838;
+  }
+  
+  .dynamic-form .remove-btn {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .dynamic-form .remove-btn:hover {
+    background: #c82333;
+  }
+  

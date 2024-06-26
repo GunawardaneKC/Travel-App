@@ -1,0 +1,53 @@
+#app {
+  height: 100%;
+}
+ 
+.swiper {
+  width: 90%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+ .swiper-slide img {
+  display: block;
+  
+  height: 100%;
+  object-fit: cover;
+}
+
+ .swiper-slide {
+  width: 60%;
+}
+
+/* .swiper-slide:nth-child(2n) {
+  width: 60%;
+} */
+
+/* .swiper-slide:nth-child(3n) {
+  width: 60%;
+}  */
+
+.sdisplay {
+  display: none;
+  justify-content: center;
+}
+
+@media (min-width: 730px) {
+  .sdisplay {
+    display: flex;
+  }
+}
+
+@media (max-width: 1090px) {
+  .swiper-slide {
+    width: 100%;
+  }
+}
